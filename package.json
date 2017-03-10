@@ -1,0 +1,23 @@
+{
+  "name": "nexe-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "nexe": {
+    "input": "./index.js",
+    "output": "./bin/hello.exe",
+    "temp": "src",
+    "runtime": {
+        "framework": "node",
+        "version": "6.5.0",
+        "js-flags": "--use_strict",
+        "ignoreFlags": true
+    }
+  }
+}
