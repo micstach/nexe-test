@@ -13,4 +13,5 @@ console.log('token %s', program.token);
 if (typeof program.action !== 'function') 
   console.log('action %s', program.action);
 
-console.log('hub: %s', program.hub);
+if (program.hub)
+  console.log('hub: %s', program.hub);
